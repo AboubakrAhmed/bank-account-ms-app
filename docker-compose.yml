@@ -74,7 +74,13 @@ services:
         condition: service_healthy
 
 
-
+  front-end-angular:
+    build: ./angular-front-end
+    container_name: front-end-angular
+    ports:
+      - '80:80'
+    expose:
+      - '80'
 
 
 
